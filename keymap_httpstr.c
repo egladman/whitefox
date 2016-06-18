@@ -39,8 +39,8 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV,PGUP,\
     TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSPC,     PGDN,\
     LGUI,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT,  NO, ENT,      DEL,\
-    FN14,  NO,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH, FN9,       UP, FN0,\
-    FN0, FN10,LALT,                FN8,           FN2, FN1,  NO,     LEFT,DOWN,RGHT \
+    FN14,  NO,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH, FN9,       FN0, UP,\
+    FN10, FN0,LALT,                FN8,           FN2, FN1,  NO,     LEFT,RGHT,DOWN \
   ),
 
 
@@ -61,8 +61,8 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV,PGUP,\
     TAB,    Q,   W,   F,   P,   G,   J,   L,   U,   Y,SCLN,LBRC,RBRC,BSPC,     PGDN,\
     LGUI,   A,   R,   S,   T,   D,   H,   N,   E,   I,   O,QUOT,  NO, ENT,      DEL,\
-    FN14,  NO,   Z,   X,   C,   V,   B,   K,   M,COMM, DOT,SLSH, FN9,       UP, FN0,\
-    FN0, FN10,LALT,                FN8,           FN2, FN1,  NO,     LEFT,DOWN,RGHT \
+    FN14,  NO,   Z,   X,   C,   V,   B,   K,   M,COMM, DOT,SLSH, FN9,       FN0, UP,\
+    FN10, FN0,LALT,                FN8,           FN2, FN1,  NO,     LEFT,RGHT,DOWN \
   ),
 
 
@@ -83,8 +83,8 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,LBRC,RBRC,BSLS, GRV,PGUP,\
     TAB, QUOT,COMM, DOT,   P,   Y,   F,   G,   C,   R,   L,SLSH, EQL,BSPC,     PGDN,\
     LGUI,   A,   O,   E,   U,   I,   D,   H,   T,   N,   S,MINS,  NO, ENT,      DEL,\
-    FN14,  NO,SCLN,   Q,   J,   K,   X,   B,   M,   W,   V,   Z,RSFT,       UP, FN0,\
-    FN0, FN10,LALT,                FN8,           FN2, FN1,  NO,     LEFT,DOWN,RGHT \
+    FN14,  NO,SCLN,   Q,   J,   K,   X,   B,   M,   W,   V,   Z,RSFT,       FN0, UP,\
+    FN10, FN0,LALT,                FN8,           FN2, FN1,  NO,     LEFT,RGHT,DOWN \
   ),
 
 
@@ -105,8 +105,8 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV,PGUP,\
     TAB,    Q,   D,   R,   W,   B,   J,   F,   U,   P,SCLN,LBRC,RBRC,BSPC,     PGDN,\
     LGUI,   A,   S,   H,   T,   G,   Y,   N,   E,   O,   I,QUOT,  NO, ENT,      DEL,\
-    FN14,  NO,   Z,   X,   M,   C,   V,   K,   L,COMM, DOT,SLSH,RSFT,       UP, FN0,\
-    FN0, FN10,LALT,                FN8,           FN2, FN1,  NO,     LEFT,DOWN,RGHT \
+    FN14,  NO,   Z,   X,   M,   C,   V,   K,   L,COMM, DOT,SLSH,RSFT,       FN0, UP,\
+    FN10, FN0,LALT,                FN8,           FN2, FN1,  NO,     LEFT,RGHT,DOWN \
   ),
 
 
