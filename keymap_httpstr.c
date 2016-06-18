@@ -22,7 +22,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-  /* 0: qwerty */
+  /* 0: qwerty
+  * ,---------------------------------------------------------------.
+  * |Esc| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = | \ | ` |PgU|
+  * |---------------------------------------------------------------|
+  * | Tab | Q | W | E | R | T | Y | U | I | O | P | [ | ] |Backs|PgD|
+  * |---------------------------------------------------------------|
+  * | Gui  | A | S | D | F | G | H | J | K | L | ; | ' | Enter  |Del|
+  * |---------------------------------------------------------------|
+  * |Shif|   | Z | X | C | V | B | N | M | , | . | / |Shift |Up |Fn0|
+  * |---------------------------------------------------------------|
+  * |Fn0 |Ctrl|Alt |       Space      |Fn2 |Fn1 |    |   Lef|Dow|Rig|
+  * `---------------------------------------------------------------'
+  */
   KEYMAP( \
     ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV,PGUP,\
     TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSPC,     PGDN,\
@@ -31,7 +43,20 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     FN0, FN10,LALT,                FN8,           FN2, FN1,  NO,     LEFT,DOWN,RGHT \
   ),
 
-  /* 1: colemak */
+
+  /* 1: colemak
+  * ,---------------------------------------------------------------.
+  * |Esc| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = | \ | ` |PgU|
+  * |---------------------------------------------------------------|
+  * | Tab | Q | W | F | P | G | J | L | U | Y | ; | [ | ] |Backs|PgD|
+  * |---------------------------------------------------------------|
+  * | Gui  | A | R | S | T | D | H | N | E | I | O | ' | Enter  |Del|
+  * |---------------------------------------------------------------|
+  * |Shif|   | Z | X | C | V | B | K | M | , | . | / |Shift |Up |Fn0|
+  * |---------------------------------------------------------------|
+  * |Fn0 |Ctrl|Alt |       Space      |Fn2 |Fn1 |    |   Lef|Dow|Rig|
+  * `---------------------------------------------------------------'
+  */
   KEYMAP( \
     ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV,PGUP,\
     TAB,    Q,   W,   F,   P,   G,   J,   L,   U,   Y,SCLN,LBRC,RBRC,BSPC,     PGDN,\
@@ -40,25 +65,52 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     FN0, FN10,LALT,                FN8,           FN2, FN1,  NO,     LEFT,DOWN,RGHT \
   ),
 
-  /* 2: dvorak */
+
+  /* 2: dvorak
+  * ,---------------------------------------------------------------.
+  * |Esc| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = | \ | ` |PgU|
+  * |---------------------------------------------------------------|
+  * | Tab | ' | , | . | P | Y | F | G | C | R | L | / | = |Backs|PgD|
+  * |---------------------------------------------------------------|
+  * | Gui  | A | O | E | U | I | D | H | T | N | S | - | Enter  |Del|
+  * |---------------------------------------------------------------|
+  * |Shif|   | ; | Q | J | K | X | B | M | W | V | Z |Shift |Up |Fn0|
+  * |---------------------------------------------------------------|
+  * |Fn0 |Ctrl|Alt |       Space      |Fn2 |Fn1 |    |   Lef|Dow|Rig|
+  * `---------------------------------------------------------------'
+  */
   KEYMAP( \
-    ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV,PGUP,\
-    TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSPC,     PGDN,\
-    LGUI,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT,  NO, ENT,      DEL,\
-    FN14,  NO,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH,RSFT,       UP, FN0,\
+    ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,LBRC,RBRC,BSLS, GRV,PGUP,\
+    TAB, QUOT,COMM, DOT,   P,   Y,   F,   G,   C,   R,   L,SLSH, EQL,BSPC,     PGDN,\
+    LGUI,   A,   O,   E,   U,   I,   D,   H,   T,   N,   S,MINS,  NO, ENT,      DEL,\
+    FN14,  NO,SCLN,   Q,   J,   K,   X,   B,   M,   W,   V,   Z,RSFT,       UP, FN0,\
     FN0, FN10,LALT,                FN8,           FN2, FN1,  NO,     LEFT,DOWN,RGHT \
   ),
 
-  /* 3: workman */
+
+  /* 3: workman
+  * ,---------------------------------------------------------------.
+  * |Esc| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = | \ | ` |PgU|
+  * |---------------------------------------------------------------|
+  * | Tab | Q | D | R | W | B | J | F | U | P | ; | [ | ] |Backs|PgD|
+  * |---------------------------------------------------------------|
+  * | Gui  | A | S | H | T | G | Y | N | E | O | I | ' | Enter  |Del|
+  * |---------------------------------------------------------------|
+  * |Shif|   | Z | X | M | C | V | K | L | , | . | / |Shift |Up |Fn0|
+  * |---------------------------------------------------------------|
+  * |Fn0 |Ctrl|Alt |       Space      |Fn2 |Fn1 |    |   Lef|Dow|Rig|
+  * `---------------------------------------------------------------'
+  */
   KEYMAP( \
     ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV,PGUP,\
-    TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSPC,     PGDN,\
-    LGUI,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT,  NO, ENT,      DEL,\
-    FN14,  NO,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH,RSFT,       UP, FN0,\
+    TAB,    Q,   D,   R,   W,   B,   J,   F,   U,   P,SCLN,LBRC,RBRC,BSPC,     PGDN,\
+    LGUI,   A,   S,   H,   T,   G,   Y,   N,   E,   O,   I,QUOT,  NO, ENT,      DEL,\
+    FN14,  NO,   Z,   X,   M,   C,   V,   K,   L,COMM, DOT,SLSH,RSFT,       UP, FN0,\
     FN0, FN10,LALT,                FN8,           FN2, FN1,  NO,     LEFT,DOWN,RGHT \
   ),
 
-  /* 4: Primary Function Layer */
+
+  /* 4: Primary Function Layer*/
   KEYMAP( \
     PWR,   F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,TRNS,TRNS,TRNS,\
     CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,PAUS,  UP,TRNS,TRNS,     TRNS,\
@@ -67,7 +119,8 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TRNS,TRNS,TRNS,               TRNS,          TRNS,TRNS,TRNS,     TRNS,PGDN,TRNS \
   ),
 
-  /* 5: Mouse Mode */
+
+  /* 5: Mouse Mode*/
   KEYMAP( \
     TRNS,ACL0,ACL1,ACL2,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,\
     TRNS,TRNS,MS_U,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,WH_U,TRNS,TRNS,     TRNS,\
@@ -76,7 +129,8 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TRNS,TRNS,TRNS,               BTN1,          TRNS,TRNS,TRNS,     TRNS,TRNS,TRNS \
   ),
 
-  /* 6: Layout selector */
+
+  /* 6: Layout selector*/
   KEYMAP( \
     TRNS,FN4, FN5, FN6, FN7, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,\
     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,\
@@ -95,9 +149,9 @@ enum macro_id {
 };
 
 const uint16_t fn_actions[] = {
-  [0]  = ACTION_LAYER_MOMENTARY(4), // to Primary Function overlay
-  [1] = ACTION_LAYER_MOMENTARY(6),  // to Layout Selector overlay
-  [2] = ACTION_LAYER_MOMENTARY(5),  // to Mouse Mode
+  [0]  = ACTION_LAYER_MOMENTARY(4),   // to Primary Function overlay
+  [1] = ACTION_LAYER_MOMENTARY(6),    // to Layout Selector overlay
+  [2] = ACTION_LAYER_MOMENTARY(5),    // to Mouse Mode
 
   [4] = ACTION_DEFAULT_LAYER_SET(0),  // set qwerty layout
   [5] = ACTION_DEFAULT_LAYER_SET(1),  // set colemak layout
