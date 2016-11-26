@@ -17,27 +17,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "keymap_common.h"
 
 const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    /* Layer 0: Default Layer
-     * ,---------------------------------------------------------------.
-     * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  \|  `|Ins|
-     * |---------------------------------------------------------------|
-     * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|Backs|Del|
-     * |---------------------------------------------------------------|
-     * |CapsLo|  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|Enter   |PgU|
-     * |---------------------------------------------------------------|
-     * |Shif|   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |Up |PgD|
-     * |---------------------------------------------------------------|
-     * |Ctrl|Gui |Alt |         Space    |Fn0 |Alt |Gui |  |Lef|Dow|Rig|
-     * `---------------------------------------------------------------'
-     */
-    [0] = KEYMAP( \
-        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS,GRV, INS, \
-        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSPC,     DEL, \
-        CAPS,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,NUHS,ENT,      PGUP,\
-        LSFT,NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RSFT,     UP,  PGDN,\
-        LCTL,LGUI,LALT,               SPC,           RALT,RGUI,RCTL,     LEFT,DOWN,RGHT \
-    ),
+
+  /* 0: Base layer (qwerty) */
+  TRUEFOX_KEYMAP( \
+    ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV, APP,\
+    TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSPC,      DEL,\
+    CAPS,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT,  NO, ENT,     PSCR,\
+    LSFT,  NO,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH,RSFT,       UP, END,\
+    LCTL, FN0,LALT,                SPC,          RALT,RCTL,  NO,     LEFT,DOWN,RGHT \
+  ),
+
+  /* 1: Primary Function Layer*/
+  TRUEFOX_KEYMAP( \
+    BTLD,   F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,TRNS,TRNS,TRNS,\
+    CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,\
+    TRNS,VOLD,VOLU,MUTE,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,\
+    TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PMNS,PGDN,DOWN,TRNS,     TRNS,TRNS,\
+    TRNS,TRNS,TRNS,               TRNS,          TRNS,TRNS,TRNS,     TRNS,TRNS,TRNS \
+  ),
 };
 
 const uint16_t fn_actions[] = {
+  [0]  = ACTION_LAYER_MOMENTARY(1),  // to Primary Function overlay
 };
